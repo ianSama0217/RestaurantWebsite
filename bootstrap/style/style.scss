@@ -1,0 +1,72 @@
+$themeColor: #777;
+
+h2,
+p {
+  font-weight: normal;
+}
+
+body {
+  background-color: #777;
+  z-index: -1;
+}
+
+nav {
+  margin-bottom: 5%;
+}
+
+#carouselExampleIndicators {
+  margin-bottom: 5%;
+
+  .bannerImg {
+    height: 50%;
+  }
+}
+
+.mealTitle {
+  font-size: 2rem;
+  margin: 5% 30% 2% 45%;
+}
+
+.gridBox {
+  display: flex;
+  justify-content: space-around;
+}
+
+.moreBtn {
+  margin: 5% 40% 2% 45%;
+  font-size: 2rem;
+}
+
+.line {
+  border: 1px solid white;
+  width: 80%;
+  margin: 5% 0px 5% 10%;
+}
+
+.footer {
+  margin-top: 5%;
+  background-color: black;
+  .topFooter {
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 0px;
+
+    p {
+      font-size: 1.5rem;
+      color: white;
+      margin-top: 4%;
+    }
+  }
+
+  .bottonFotter {
+    display: flex;
+    justify-content: center;
+
+    .footerIcon {
+      filter: invert(90%);
+      height: 5%;
+      width: 5%;
+      margin: 0.5% 1.5%;
+    }
+  }
+}
