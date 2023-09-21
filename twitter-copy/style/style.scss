@@ -1,0 +1,81 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  font-size: 1.5rem;
+  width: 10vw;
+  margin: 7% 3%;
+}
+
+body {
+  background-color: #1a191e;
+  display: flex;
+
+  .leftSideBar {
+    flex: 2 1 20%;
+    border-right: 1px solid white;
+    // border: 0px solid pink;
+
+    .logo {
+      height: 8vw;
+      width: 8vw;
+      border-radius: 50%;
+      margin: 7% 3%;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-color: grey;
+      }
+      .logoImg {
+        height: 8vw;
+        width: 8vw;
+        filter: invert(90%);
+        margin: 7% 3%;
+        padding: 10px;
+      }
+    }
+
+    ul {
+      //   display: flex;
+      //   flex-wrap: wrap;
+      .boxGrid {
+        width: 15vw;
+        display: flex;
+        transition: all 1s ease;
+        border: 0px solid white;
+
+        &:hover {
+          border-radius: 20px;
+          background-color: grey;
+        }
+      }
+
+      .icon {
+        height: 3vw;
+        width: 3vw;
+        filter: invert(90%);
+        margin: 7% 5%;
+      }
+
+      .communtiesBox {
+        width: 18vw;
+      }
+
+      .notificationsBox {
+        width: 18vw;
+      }
+    }
+  }
+
+  .main {
+    flex: 8 1 80%;
+    border: 0px solid lightgreen;
+  }
+}

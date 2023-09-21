@@ -1,0 +1,67 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  font-size: 1.5rem;
+  width: 10vw;
+  margin: 7% 3%;
+}
+
+body {
+  background-color: #1a191e;
+  display: flex;
+}
+body .leftSideBar {
+  flex: 2 1 20%;
+  border-right: 1px solid white;
+}
+body .leftSideBar .logo {
+  height: 8vw;
+  width: 8vw;
+  border-radius: 50%;
+  margin: 7% 3%;
+  transition: all 0.5s ease;
+}
+body .leftSideBar .logo:hover {
+  background-color: grey;
+}
+body .leftSideBar .logo .logoImg {
+  height: 8vw;
+  width: 8vw;
+  filter: invert(90%);
+  margin: 7% 3%;
+  padding: 10px;
+}
+body .leftSideBar ul .boxGrid {
+  width: 15vw;
+  display: flex;
+  transition: all 1s ease;
+  border: 0px solid white;
+}
+body .leftSideBar ul .boxGrid:hover {
+  border-radius: 20px;
+  background-color: grey;
+}
+body .leftSideBar ul .icon {
+  height: 3vw;
+  width: 3vw;
+  filter: invert(90%);
+  margin: 7% 5%;
+}
+body .leftSideBar ul .communtiesBox {
+  width: 18vw;
+}
+body .leftSideBar ul .notificationsBox {
+  width: 18vw;
+}
+body .main {
+  flex: 8 1 80%;
+  border: 0px solid lightgreen;
+}/*# sourceMappingURL=style.css.map */
