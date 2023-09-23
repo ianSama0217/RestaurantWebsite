@@ -19,7 +19,8 @@ body {
   display: flex;
 }
 body .leftSideBar {
-  flex: 2 1 20%;
+  flex: 2 1 23%;
+  padding-right: 3vw;
   border-right: 1px solid white;
 }
 body .leftSideBar .logo {
@@ -40,7 +41,7 @@ body .leftSideBar .logo .logoImg {
   padding: 10px;
 }
 body .leftSideBar ul .boxGrid {
-  width: 15vw;
+  width: 16vw;
   display: flex;
   transition: all 1s ease;
   border: 0px solid white;
@@ -55,13 +56,218 @@ body .leftSideBar ul .icon {
   filter: invert(90%);
   margin: 7% 5%;
 }
-body .leftSideBar ul .communtiesBox {
-  width: 18vw;
-}
-body .leftSideBar ul .notificationsBox {
-  width: 18vw;
-}
 body .main {
-  flex: 8 1 80%;
+  flex: 8 1 58%;
   border: 0px solid lightgreen;
+}
+body .main .navbar {
+  border: 0px solid aqua;
+  height: 25vh;
+  padding-top: 1rem;
+  box-shadow: 0px 5px 6px -6px #777;
+  position: sticky;
+  top: 0;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  z-index: 1;
+}
+body .main .navbar h1 {
+  font-size: 2rem;
+  color: white;
+  margin: 0px 0px 1rem 2rem;
+}
+body .main .navbar .bottonNavbar {
+  border: 0px solid lightgreen;
+  display: flex;
+  justify-content: space-around;
+  padding: 1.15rem;
+}
+body .main .navbar .bottonNavbar h3 {
+  font-size: 1.35rem;
+  color: white;
+  padding: 1.15rem 1.5rem;
+  transition: all 0.5s ease;
+}
+body .main .navbar .bottonNavbar h3:hover {
+  background-color: #777;
+}
+body .main .navbar .bottonNavbar h3:active {
+  border-bottom: 1px solid rgba(38, 175, 244, 0.7);
+  border-radius: 5%;
+  border-width: 1vw;
+}
+body .main .mainContent .userArea {
+  display: flex;
+  justify-content: flex-start;
+}
+body .main .mainContent .userArea .userImg {
+  height: 3rem;
+  width: 3rem;
+  filter: invert(80%);
+  margin: 1rem 1.5rem;
+}
+body .main .mainContent .userArea .userName {
+  font-size: 2rem;
+  color: white;
+  margin-top: 1.25rem;
+}
+body .main .mainContent .postContent {
+  padding: 0px 1rem;
+}
+body .main .mainContent .postContent .postText {
+  color: white;
+  font-size: 1.35rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 4rem;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+body .main .mainContent .postContent .postImg {
+  height: 50vh;
+  width: 94%;
+  border-radius: 20px;
+  margin-bottom: 4rem;
+  margin-left: 3%;
+  transition: all 0.5s ease;
+}
+body .main .mainContent .postContent .postImg:active {
+  border-radius: 0px;
+  scale: 1.5;
+}
+body .main .mainContent .postContent .postVideo {
+  height: 50vh;
+  width: 94%;
+  border-radius: 20px;
+  margin-bottom: 4rem;
+  margin-left: 3%;
+}
+body .main .mainContent .iconBar {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 3%;
+  border-bottom: 1px solid grey;
+}
+body .main .mainContent .iconBar .icon {
+  height: 2rem;
+  width: 2rem;
+  filter: invert(80%);
+}
+body .main .mainContent .iconBar .iconArea {
+  padding: 0px 3px;
+  display: flex;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+body .main .mainContent .iconBar .iconArea:hover {
+  background-color: #777;
+}
+body .main .mainContent .iconBar .iconArea .iconText {
+  color: white;
+  font-size: 1.15rem;
+  font-weight: bold;
+  margin: 5px;
+}
+body .main .mainContent .iconBar .share {
+  padding: 0px 3px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+body .main .mainContent .iconBar .share:hover {
+  background-color: #777;
+}
+body .rightArea {
+  flex: 2 1 30%;
+  border-left: 1px solid white;
+}
+body .rightArea .searchBar .searchBox {
+  height: 2.5rem;
+  width: 80%;
+  margin: 2.5vh 2vh 2.5vh 2rem;
+  padding-left: 2.5rem;
+  color: white;
+  border-style: none;
+  border-radius: 20px;
+  background-image: url("../image/icon/search.svg");
+  background-size: 1.65rem;
+  background-repeat: no-repeat;
+  background-position: 0.5rem center;
+  background-color: #777;
+}
+body .rightArea .searchBar .searchBox::-moz-placeholder {
+  color: white;
+  font-size: 1.25rem;
+}
+body .rightArea .searchBar .searchBox::placeholder {
+  color: white;
+  font-size: 1.25rem;
+}
+body .rightArea .subscribeBox {
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 0px solid pink;
+  border-radius: 5px;
+  background-color: #3b3b3b;
+  margin: 1.5rem;
+  padding: 1rem 2rem 1rem 0.5rem;
+}
+body .rightArea .subscribeBox h3 {
+  color: white;
+  font-size: 1.5rem;
+}
+body .rightArea .subscribeBox p {
+  margin-top: 1rem;
+  color: white;
+  font-size: 1.15rem;
+}
+body .rightArea .subscribeBox .subscribeBtn {
+  height: 3rem;
+  width: 8rem;
+  margin-top: 1rem;
+  background-color: rgba(38, 175, 244, 0.7);
+  font-size: 1.3rem;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+body .rightArea .trendsBox {
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 0px solid pink;
+  border-radius: 5px;
+  background-color: #3b3b3b;
+  margin: 1.5rem;
+  padding: 1rem 2rem 1rem 0.5rem;
+}
+body .rightArea .trendsBox h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+body .rightArea .trendsBox .trendTag {
+  width: 110%;
+  padding-left: 1rem;
+  transition: all 0.5s ease;
+}
+body .rightArea .trendsBox .trendTag:hover {
+  background-color: #cecece;
+}
+body .rightArea .trendsBox .trendTag p {
+  color: grey;
+  font-size: 1.2rem;
+  margin: 0.5rem 0px;
+}
+body .rightArea .trendsBox .trendTag h4 {
+  color: white;
+  font-size: 1.5rem;
+}
+body .rightArea .trendsBox .showMore {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: rgba(38, 175, 244, 0.7);
+  margin-top: 3rem;
 }/*# sourceMappingURL=style.css.map */

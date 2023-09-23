@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Twitter</title>
-    <link rel="icon" type="image/png" href="./image/twitter-logo.png" />
+    <link rel="icon" type="image/png" href="./image/twitter-logo-small.png" />
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
@@ -52,12 +52,186 @@
       </ul>
     </section>
 
-    <section class="main"></section>
+    <section class="main">
+      <div class="navbar">
+        <h1>Home</h1>
+        <div class="bottonNavbar">
+          <h3>For you</h3>
+          <h3>Following</h3>
+        </div>
+      </div>
+
+      <div class="mainContent">
+        <div class="userArea">
+          <img class="userImg" src="./image/icon/user.svg" alt="user" />
+          <p class="userName">user name</p>
+        </div>
+        <div class="postContent">
+          <p class="postText">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+            quisquam eos obcaecati iste, exercitationem ullam magni praesentium
+            illo qui magnam?
+          </p>
+          <img
+            class="postImg"
+            src="./image/post-img.jpg"
+            src="postImg"
+            title="This is post image"
+          />
+        </div>
+        <div class="iconBar">
+          <div class="iconArea">
+            <img
+              class="icon"
+              src="./image/icon/comment.svg"
+              alt="comment"
+              title="comment"
+            />
+            <p class="iconText">235</p>
+          </div>
+          <div class="iconArea">
+            <img
+              class="icon"
+              src="./image/icon/repost.svg"
+              alt="repost"
+              title="repost"
+            />
+            <p class="iconText">1915</p>
+          </div>
+          <div class="iconArea">
+            <img
+              class="icon"
+              src="./image/icon/heart.svg"
+              alt="like"
+              title="like"
+            />
+            <p class="iconText">28.7K</p>
+          </div>
+          <div class="iconArea">
+            <img
+              class="icon"
+              src="./image/icon/chart-line.svg"
+              alt="view"
+              title="view"
+            />
+            <p class="iconText">580.9K</p>
+          </div>
+          <img
+            class="icon share"
+            src="./image/icon/share.svg"
+            alt="share"
+            title="share"
+          />
+        </div>
+      </div>
+
+      <div class="mainContent">
+        <div class="userArea">
+          <img class="userImg" src="./image/icon/user.svg" alt="user" />
+          <p class="userName">user name</p>
+        </div>
+        <div class="postContent">
+          <p class="postText">Music Video!!!</p>
+          <iframe
+            class="postVideo"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/_UFrF3t5m0I?si=Rr-I4xDd8RehwWuk"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="iconBar">
+          <div class="iconArea">
+            <img
+              class="icon"
+              src="./image/icon/comment.svg"
+              alt="comment"
+              title="comment"
+            />
+            <p class="iconText">235</p>
+          </div>
+          <div class="iconArea">
+            <img
+              class="icon"
+              src="./image/icon/repost.svg"
+              alt="repost"
+              title="repost"
+            />
+            <p class="iconText">1915</p>
+          </div>
+          <div class="iconArea">
+            <img
+              class="icon"
+              src="./image/icon/heart.svg"
+              alt="like"
+              title="like"
+            />
+            <p class="iconText">28.7K</p>
+          </div>
+          <div class="iconArea">
+            <img
+              class="icon"
+              src="./image/icon/chart-line.svg"
+              alt="view"
+              title="view"
+            />
+            <p class="iconText">580.9K</p>
+          </div>
+          <img
+            class="icon share"
+            src="./image/icon/share.svg"
+            alt="share"
+            title="share"
+          />
+        </div>
+      </div>
+    </section>
 
     <section class="rightArea">
       <div class="searchBar">
-        <img class="icon" src="./image/icon/search.svg" alt="serach" />
-        <input type="text" placeholder="Search" />
+        <input class="searchBox" type="text" placeholder="Search" />
+      </div>
+      <div class="subscribeBox">
+        <h3>Subscribe to Premium</h3>
+        <p>
+          Subscribe to unlock new features and if eligible, receive a share of
+          ads revenue.
+        </p>
+        <button class="subscribeBtn" type="submit">Subscribe</button>
+      </div>
+      <div class="trendsBox">
+        <h3>Trends for you</h3>
+        <div class="trendTag">
+          <p>Trending</p>
+          <h4>Game</h4>
+          <p>35.5K posts</p>
+        </div>
+        <div class="trendTag">
+          <p>Trending</p>
+          <h4>Animation</h4>
+          <p>246K posts</p>
+        </div>
+        <div class="trendTag">
+          <p>Animal.Trending</p>
+          <h4>Dog</h4>
+          <p>1205K posts</p>
+        </div>
+        <div class="trendTag">
+          <p>Trending</p>
+          <h4>Japan</h4>
+          <p>26.5K posts</p>
+        </div>
+        <div class="trendTag">
+          <p>Trending</p>
+          <h4>Vtuber</h4>
+          <p>78.2K posts</p>
+        </div>
+        <div class="trendTag">
+          <a class="showMore" href="#">show more</a>
+        </div>
       </div>
     </section>
   </body>
